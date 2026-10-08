@@ -1,0 +1,14 @@
+{
+  "title": "Google CTF 2021: Filestore",
+  "description": "A file store with deduplication and a status command that reports the quota used. The flag was stored, but its id was lost.",
+  "question": "Retrieve the flag from the challenge service.",
+  "category": "MISC",
+  "difficulty": 2,
+  "evidence_kind": "SECRET",
+  "capabilities": [
+    "deduplication",
+    "side-channel",
+    "compression",
+    "python"
+  ]
+}
