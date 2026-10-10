@@ -1,0 +1,58 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Recover the stored flag",
+      "prompt": "The flag is one of the files in the store. Recover it without knowing its file id.",
+      "check": {
+        "evidence": "SECRET",
+        "format": "CTF{%s}"
+      },
+      "dev": "CTF{dev-google-ctf-2021-filestore}",
+      "hints": [
+        "Storing data the service already holds costs nothing.",
+        "Watch the status output while you store guesses: it tells you whether a guess was already there."
+      ],
+      "steps": [
+        {
+          "key": "optimisation",
+          "title": "Name the optimisation",
+          "prompt": "Which storage optimisation does the service apply to data it already holds?",
+          "check": {
+            "answer": [
+              "deduplication",
+              "dedup",
+              "dedupe",
+              "data deduplication"
+            ]
+          }
+        },
+        {
+          "key": "leak",
+          "title": "Find the leak",
+          "prompt": "Which menu command reveals how much space is used?",
+          "check": {
+            "answer": [
+              "status"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the attack class",
+          "prompt": "What class of attack learns a secret from a measurable side effect rather than from the output itself?",
+          "check": {
+            "answer": [
+              "side channel",
+              "side-channel",
+              "side channel attack",
+              "side-channel attack",
+              "oracle",
+              "compression oracle"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
