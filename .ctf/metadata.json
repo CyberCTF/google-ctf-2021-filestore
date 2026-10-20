@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-google-ctf-2021-filestore",
+  "slug": "google-ctf-2021-filestore",
   "title": "Google CTF 2021: Filestore",
   "description": "A file store with deduplication and a status command that reports the quota used. The flag was stored, but its id was lost.",
-  "question": "Recover the flag that the file store keeps as one of its files.",
-  "category": "MISC",
+  "category": "misc",
   "difficulty": 2,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Recover the flag that the file store keeps as one of its files."
 }
